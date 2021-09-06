@@ -1,0 +1,36 @@
+
+svg *:focus {
+outline: none;
+}
+
+/* svg *:focus path{
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 400%;
+    animation: dash 3s linear infinite;
+}
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  } */
+
+  svg *:focus path{
+    animation: flash-fill 3s linear infinite;
+  }
+
+  svg *:focus text{
+    fill: black;
+  }
+
+  @keyframes flash-fill {
+    0% {
+        fill: #FE6100;
+    }
+    50% {
+        fill: white;
+    }
+    100% {
+        fill: #FE6100;
+    }
+  }
